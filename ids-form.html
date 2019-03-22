@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="../ids-input-db/ids-input-db.html">
+<link rel="import"  href="../paper-input/paper-input.html">
 
 <dom-module id="ids-form">
   <template>
@@ -15,6 +16,8 @@
     <ids-input-db id="nombre" value-input="{{valueTelefono}}" text-label="Telefono:" ></ids-input-db>
     <ids-input-db id="nombre" value-input="{{valueEmail}}" text-label="Email:" ></ids-input-db>
     <ids-input-db id="nombre" value-input="{{valueEmailT}}" text-label="Email Trabajo:" ></ids-input-db>
+
+    <paper-input always-float-label label="Nombre polymer" value="{{valueNombre}}"></paper-input>
    </form>
     
     <p>Nombre: [[valueNombre]]</p>
